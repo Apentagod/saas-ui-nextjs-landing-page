@@ -1,30 +1,30 @@
 import * as React from 'react'
 
 const faq = {
-  title: 'Frequently asked questions',
+  title: 'Gyakran ismételt kérdések',
   // description: '',
   items: [
     {
-      q: 'How many products can I use Saas UI Pro for?',
+      q: 'Mi az a MuzsikAI?',
       a: (
         <>
-          The single license can be used for one commercial application or SaaS
-          product and unlimited internal tools. You can buy as many licenses as
-          you need. <br /> The unlimited license does not have any restrictions.
+          
+
+A MuzsikAI egy zenei rendelési platform, ahol különféle zenei csomagokat rendelhetsz, amelyeket szakértőink állítanak össze személyre szabottan az igényeid szerint.
         </>
       ),
     },
     {
-      q: 'Can I use Saas UI Pro for client work?',
-      a: "Yes, that's totally up to you, as long as it fits the license you purchase.",
+      q: 'Hogyan rendelhetek zenét a MuzsikAI-ról?',
+      a: "Válaszd ki a neked tetsző csomagot, majd oszd meg velünk preferenciáidat és igényeidet az adott e-mail címen, vagy egyszerűen használd a rendelés gombot a honlapon, ahol közvetlenül rögzítheted kéréseidet. Ezt követően azonnal hozzálátunk a zenék elkészítéséhez. Minden dal hossza 2-3 perc. Miután befejeztük, egy demó verziót küldünk neked e-mailben, és amennyiben elnyeri a tetszésedet, megküldjük a teljes dalokat. A kérések között mindenképpen szerepeljenek a következők: Csomag neve, mindegyik dal szövege (ígényelhetsz ingyen is szimplán leírva, hogy miről szóljon a zene, kik szerepeljenek benne, milyen zenei stílusban, ha nincs ötleted), zenei stílus, egyéb kérések, ha lehetséges",
     },
     {
-      q: 'Can I use Saas UI Pro for Open Source projects?',
-      a: 'No currently not. A large part of Saas UI is already released under MIT license. We try to give back to the community as much as possible.',
+      q: 'Hogyan történik a fizetés?',
+      a: 'A fizetés banki átutalással történik, miután a DEMO meghallgatása után megerősítetted, hogy szeretnéd megvásárolni a teljes zenét, ezután további inforámciókat kapsz az utalással kapcsolatban.',
     },
     {
-      q: 'Does Saas UI include Figma, Sketch or other design files?',
-      a: 'No, Saas UI does not include any design assets. Maintaining design resources costs a lot of extra effort. We believe small teams can move much faster by designing directly in code, with help of Storybooks.',
+      q: 'Hogyan garantálja a MuzsikAI a minőséget?',
+      a: 'Minden rendelés után, fizetés előtt kapsz egy DEMO változatot az adott dalból (nagyjából 15-20mp-es), hogy mindenképpen meggyőződj arról, hogy az elkészült dal kielégíti-e az igényeidet, elkerülve mindenféle félreértést. Csak az ezt követő megerősítésed után kérjük a fizetést. Amint a fizetés megérkezik, kapsz egy megerősítő e-mail-t a megrendelt dalaiddal csatolva.',
     },
   ],
 }

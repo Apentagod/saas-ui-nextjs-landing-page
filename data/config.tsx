@@ -1,15 +1,15 @@
 import { Button } from '@chakra-ui/react'
 import { Link } from '@saas-ui/react'
 import { NextSeoProps } from 'next-seo'
-import { FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaBitcoin, FaGithub, FaMusic, FaTwitter } from 'react-icons/fa'
 import { FiCheck } from 'react-icons/fi'
 import { Logo } from './logo'
 
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    // title: ' SaasUI',
+    // description: 'The React component library for startups',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
@@ -17,23 +17,23 @@ const siteConfig = {
     links: [
       {
         id: 'features',
-        label: 'Features',
+        label: 'Szolgáltatások',
       },
       {
         id: 'pricing',
-        label: 'Pricing',
+        label: 'Árak',
       },
       {
         id: 'faq',
         label: 'FAQ',
       },
       {
-        label: 'Login',
-        href: '/login',
+        // label: 'Belépés',
+        // href: '/login',
       },
       {
-        label: 'Sign Up',
-        href: '/signup',
+        label: 'Rendelés',
+        href: 'mailto:muzsikai.planner984@simplelogin.com',
         variant: 'primary',
       },
     ],
@@ -41,22 +41,22 @@ const siteConfig = {
   footer: {
     copyright: (
       <>
-        Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        {/* Built by{' '}
+        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link> */}
       </>
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
-        label: 'Contact',
+        href: 'mailto:muzsikai.planner984@simplelogin.com',
+        label: 'Elérhetőség',
       },
       {
-        href: 'https://twitter.com/saas_js',
-        label: <FaTwitter size="14" />,
+        href: 'mailto:muzsikai.planner984@simplelogin.com',
+        label: <FaMusic size="14" />,
       },
       {
-        href: 'https://github.com/saas-js/saas-ui',
-        label: <FaGithub size="14" />,
+        // href: 'mailto:muzsikai.planner984@simplelogin.com',
+        // label: <Famu size="14" />,
       },
     ],
   },

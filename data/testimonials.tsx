@@ -1,40 +1,34 @@
 export default {
-  title: 'Loved by tech people',
+  title: 'Az Emberek Imádják',
   items: [
     {
-      name: 'Eelco Wiersma',
-      description: 'Founder Saas UI',
+      name: 'Endre Werner',
+      description: 'Nyugdíjas',
       avatar:
         'https://pbs.twimg.com/profile_images/1470742164024008706/k-eXHtu0_normal.jpg',
       children: (
         <>
-          “With SaaS UI I am able to produce high quality dashboard apps and
-          internal tools without a lot of design skills. The ROI really is
-          amazing.”
+          “A MuzsikAI segítségével, külföldi származásom és idős korom révén, hozzájutottam olyan nyelvű általam készített alkotásokhoz, amiket egyedül nem tudtam volna megvalósítani. Köszönöm szépen, Thank you!”
         </>
       ),
     },
     {
-      name: 'Caroline Yahaya',
-      description: 'Fullstack Developer',
+      name: 'Nemes Petra',
+      description: 'Anyuka',
       avatar: '/static/images/avatar2.jpg',
       children: (
         <>
-          “Saas UI allows me to build beautiful and functional UI super fast.
-          The components are very well thought out and the Next.js starter kit
-          saved me at least 100 hours of work.”
+          “A MuzsikAI segítségével több rokonomnak is rendeltem zenéket, születésnapokra, karácsonyra és még sok más eseményre!”
         </>
       ),
     },
     {
-      name: 'Alberto Vazquez',
-      description: 'Frontend Engineer',
+      name: 'Kovács Péter',
+      description: 'Tanuló',
       avatar: '/static/images/avatar3.jpg',
       children: (
         <>
-          “Saas UI gave us a perfect starting point for our project, having the
-          storybooks already set up with beautifully crafted components and
-          fully mocked pages was a treat.”
+          “A MuzsikAI segítségével, egyszerűen készítettem vicces diss track-et több haveromnak is!:)”
         </>
       ),
     },

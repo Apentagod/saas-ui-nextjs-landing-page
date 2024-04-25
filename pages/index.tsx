@@ -26,6 +26,7 @@ import { Link, Br } from "@saas-ui/react";
 import { Em } from "components/typography";
 import { NextjsLogo, ChakraLogo } from "components/logos";
 import {
+  FiAlertCircle,
   FiArrowRight,
   FiBox,
   FiCheck,
@@ -33,14 +34,19 @@ import {
   FiCopy,
   FiFlag,
   FiGrid,
+  FiHelpCircle,
   FiLock,
+  FiMusic,
+  FiPackage,
   FiSearch,
+  FiSettings,
   FiSliders,
   FiSmile,
   FiTerminal,
   FiThumbsUp,
   FiToggleLeft,
   FiTrendingUp,
+  FiUser,
   FiUserPlus,
 } from "react-icons/fi";
 import { Features } from "components/features";
@@ -60,12 +66,13 @@ import {
   HighlightsItem,
   HighlightsTestimonialItem,
 } from "components/highlights";
+import { FaIceCream } from "react-icons/fa";
 
 const Home: NextPage = () => {
   return (
     <Box>
       <SEO
-        title="Saas UI Landingspage"
+        title="MuzsikAI"
         description="Free SaaS landingspage starter kit"
       />
       <Box>
@@ -97,34 +104,33 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                MuzsikAI
+                <Br /> Ahol a zene intelligens húrokat penget
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{" "}
-                build intuitive SaaS products with speed.
+               Forradalmi zenei platform, ahol igényelhetsz <Em>MESTERSÉGES INTELLIGENCIA</Em>
+                <Br /> által személyre szabott zenéket. 
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
+              {/* <HStack pt="4" pb="12" spacing="8">
                 <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
-              </HStack>
+              </HStack> */}
 
-              <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
-                  Sign Up
+              <ButtonGroup spacing={4} pt={8} alignItems="center">
+                <ButtonLink colorScheme="primary" size="lg" href="mailto:muzsikai.planner984@simplelogin.com">
+                  Rendelés
                 </ButtonLink>
-                <ButtonLink
+                {/* <ButtonLink
                   size="lg"
-                  href="https://demo.saas-ui.dev"
+                  href="mailto:muzsikai.planner984@simplelogin.com"
                   variant="outline"
                   rightIcon={
                     <Icon
-                      as={FiArrowRight}
+                      // as={FiArrowRight}
                       sx={{
                         transitionProperty: "common",
                         transitionDuration: "normal",
@@ -135,8 +141,8 @@ const HeroSection: React.FC = () => {
                     />
                   }
                 >
-                  View demo
-                </ButtonLink>
+                   View demo 
+                </ButtonLink> */}
               </ButtonGroup>
             </FallInPlace>
           </Hero>
@@ -152,7 +158,7 @@ const HeroSection: React.FC = () => {
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%">
                 <Image
-                  src="/static/screenshots/list.png"
+                  src="/static/screenshots/kezdd.png"
                   layout="fixed"
                   width={1200}
                   height={762}
@@ -174,33 +180,33 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: "Accessible",
+            title: "Egyszerű",
             icon: FiSmile,
-            description: "All components strictly follow WAI-ARIA standards.",
+            description: "Egyszerű használattal tökéletes eredményeket érhet el.",
             iconPosition: "left",
             delay: 0.6,
           },
           {
-            title: "Themable",
+            title: "Tematikus",
             icon: FiSliders,
             description:
-              "Fully customize all components to your brand with theme support and style props.",
+              "Teljes mértékben személyre szabható dalszöveg, stílus, nyelv és téma.",
             iconPosition: "left",
             delay: 0.8,
           },
           {
-            title: "Composable",
+            title: "Összeállítható",
             icon: FiGrid,
             description:
-              "Compose components to fit your needs and mix them together to create new ones.",
+              "Az egyes elemeket tetszés szerint lehet kombinálni és új összeállításokat készíteni.",
             iconPosition: "left",
             delay: 1,
           },
           {
-            title: "Productive",
+            title: "Produktív",
             icon: FiThumbsUp,
             description:
-              "Designed to reduce boilerplate and fully typed, build your product at speed.",
+              "Gyorsan és hatékonyan lehet vele dolgozni, minimalizálva a felesleges munkát.",
             iconPosition: "left",
             delay: 1.1,
           },
@@ -216,27 +222,25 @@ const HighlightsSection = () => {
 
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem colSpan={[1, null, 2]} title="Hogy miért tőlünk rendelj?">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+          Fedezd fel a MuzsikAI-t, ahol csak a <Em>zenei igényeidet kell elküldened</Em>, és mi elkészítjük a tökéletes dallamot számodra!
+          Legyen szó <Em>bármilyen szövegről, stílusról, nyelvről vagy hangulatról</Em>, a MuzsikAI egyszerűen és gyorsan hozza el neked a kívánt zenét. Rendelj még ma, és tapasztald meg a zenei alkotás új dimenzióját!
           </Text>
 
           <Flex
-            rounded="full"
-            borderWidth="1px"
-            flexDirection="row"
-            alignItems="center"
-            py="1"
-            ps="8"
-            pe="2"
-            bg="primary.900"
-            _dark={{ bg: "gray.900" }}
+            // rounded="full"
+            // borderWidth="1px"
+            // flexDirection="row"
+            // alignItems="center"
+            // py="1"
+            // ps="8"
+            // pe="2"
+            // bg="primary.900"
+            // _dark={{ bg: "gray.900" }}
           >
-            <Box>
+            {/* <Box>
               <Text color="yellow.400" display="inline">
                 yarn add
               </Text>{" "}
@@ -251,55 +255,50 @@ const HighlightsSection = () => {
               variant="ghost"
               ms="4"
               isRound
-              color="white"
-            />
+              color="white" */}
+            {/* /> */}
           </Flex>
         </VStack>
       </HighlightsItem>
-      <HighlightsItem title="Solid foundations">
+      <HighlightsItem title="Minden Korosztálynak">
         <Text color="muted" fontSize="lg">
-          We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+        Nem arra törekszünk, hogy már a létező megoldásokat újraalkossuk, és ezt neked sem kell. A zenei szakma legkiválóbb és legelismertebb eszközei közül választottuk ki a legjobbakat, amelyekre alapozva hoztuk létre a MuzsikAI-t, így <Em>mindenki számára elérhető</Em>.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
-        name="Renata Alink"
-        description="Founder"
+        name="Horváth Klaudia"
+        description=""
         avatar="/static/images/avatar.jpg"
         gradient={["pink.200", "purple.500"]}
       >
-        “Saas UI helped us set up a beautiful modern UI in no time. It saved us
-        hundreds of hours in development time and allowed us to focus on
-        business logic for our specific use-case from the start.”
+        “A MuzsikAI olyan dalokat készített nekem, amiket már régóta szerettem volna megvalósítani. Sajnos nincs jó hangom és a zenei tudásom sem a legjobb, de a MuzsikAI-al végre ki tudom fejezni az érzelmeimet!”
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
-        title="Start your next idea two steps ahead"
+        title="Indítsd el a következő zenei projektedet!"
       >
         <Text color="muted" fontSize="lg">
-          We took care of all your basic frontend needs, so you can start
-          building functionality that makes your product unique.
+        A MuzsikAI gondoskodik minden alapvető zenei igényedről, így neked csak ezeket kell elküldened nekünk.
         </Text>
         <Wrap mt="8">
           {[
-            "authentication",
-            "navigation",
-            "crud",
-            "settings",
-            "multi-tenancy",
-            "layouts",
-            "billing",
-            "a11y testing",
-            "server-side rendering",
-            "documentation",
-            "onboarding",
-            "storybooks",
-            "theming",
-            "upselling",
-            "unit testing",
-            "feature flags",
-            "responsiveness",
+            "személyre szabott dalok bárkinek és bármire",
+            "minden nyelven",
+            "saját vagy generált dalszövegekkel",
+            "bármilyen stílusban",
+            "pop",
+            "rock",
+            "jazz",
+            "elektronikus",
+            "coronita",
+            "diss-track",
+            "elektronikus",
+            "születésnapra",
+            "ajándékba",
+            "évfordulókra",
+            "haveroknak",
+            "nagyszülőknek",
+            "egyszerű használat",
           ].map((value) => (
             <Tag
               key={value}
@@ -328,16 +327,15 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          Nem Megszokott Zenei Sablon
+          <Br /> 
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
+          A MuzsikAI minden szükséges eszközt biztosít, hogy modern, személyre szabott zenéket hozz létre. Ideális alap a következő zenei projektjeidhez vagy a saját dallamrendszered megalkotásához.
           <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          
         </>
       }
       align="left"
@@ -345,72 +343,72 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: "Components.",
-          icon: FiBox,
+          title: "Funkciók.",
+          icon: FiMusic,
           description:
-            "All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.",
+            "Testre szabható zenei funkciók, amelyekkel saját ízlésed szerint alakíthatod a dalokat, bármilyen nyelven, stílusban, szöveggel.",
           variant: "inline",
         },
         {
-          title: "Starterkits.",
-          icon: FiLock,
+          title: "Kezdőcsomagok.",
+          icon: FiPackage,
           description:
-            "Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.",
+            "Különböző zenei stílusokban készült dalok, amelyeket saját vagy generált dalszövegekkel látunk el. Ideális ajándék párodnak, barátodnak vagy ismerőseidnek különleges alkalmakra, mint például születésnap.",
           variant: "inline",
         },
         {
-          title: "Documentation.",
+          title: "Dokumentáció.",
           icon: FiSearch,
           description:
-            "Extensively documented, including storybooks, best practices, use-cases and examples.",
+            "Minden szükséges információ részletesen dokumentálva, beleértve a generált dalok zenei stílusát, szövegét, témáját.",
           variant: "inline",
         },
         {
-          title: "Onboarding.",
-          icon: FiUserPlus,
+          title: "Felhasználói bevezetés.",
+          icon: FiUser,
           description:
-            "Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.",
+            "Bevezető példák, amelyek segítenek a MuzsikAI rendszerének könnyű és gyors elsajátításában.",
           variant: "inline",
         },
         {
-          title: "Feature flags.",
-          icon: FiFlag,
-          description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
-          variant: "inline",
-        },
-        {
-          title: "Upselling.",
+          title: "Up-to-date.",
           icon: FiTrendingUp,
           description:
-            "Components and hooks for upgrade flows designed to make upgrading inside your app frictionless.",
+            "Minden prémium zenei elem hozzáférhető a rendszerünkön, garantálva, hogy a zene mindig friss és személyre szabott maradjon.",
           variant: "inline",
         },
         {
-          title: "Themes.",
-          icon: FiToggleLeft,
+          title: "Kreativitás.",
+          icon: FaIceCream,
           description:
-            "Includes multiple themes with darkmode support, always have the perfect starting point for your next project.",
+            "A MuzsikAI tökéletes eszköz arra, hogy inspirálódj és kibontakoztasd kreatív énedet.",
           variant: "inline",
         },
         {
-          title: "Generators.",
-          icon: FiTerminal,
-          description:
-            "Extend your design system while maintaininig code quality and consistency with built-in generators.",
-          variant: "inline",
+          // title: "Themes.",
+          // icon: FiToggleLeft,
+          // description:
+          //   "Includes multiple themes with darkmode support, always have the perfect starting point for your next project.",
+          // variant: "inline",
         },
         {
-          title: "Monorepo.",
-          icon: FiCode,
-          description: (
-            <>
-              All code is available as packages in a high-performance{" "}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
-            </>
-          ),
-          variant: "inline",
+          // title: "Generators.",
+          // icon: FiTerminal,
+          // description:
+          //   "Extend your design system while maintaininig code quality and consistency with built-in generators.",
+          // variant: "inline",
+        },
+        {
+          // title: "Monorepo.",
+          // icon: FiCode,
+          // description: (
+          //   <>
+          //     All code is available as packages in a high-performance{" "}
+          //     <Link href="https://turborepo.com">Turborepo</Link>, you have full
+          //     control to modify and adjust it to your workflow.
+          //   </>
+          // ),
+          // variant: "inline",
         },
       ]}
     />
@@ -452,7 +450,7 @@ const PricingSection = () => {
   return (
     <Pricing {...pricing}>
       <Text p="8" textAlign="center" color="muted">
-        VAT may be applicable depending on your location.
+        {/* VAT may be applicable depending on your location. */}
       </Text>
     </Pricing>
   );
@@ -468,11 +466,11 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: "Support us by becoming a stargazer! 🚀 ",
-        description:
-          '<img src="https://img.shields.io/github/stars/saas-js/saas-ui.svg?style=social&label=Star" />',
-        href: "https://github.com/saas-js/saas-ui",
-        action: false,
+        // title: " Támogasson minket🚀Támo ",
+        // description:
+        //   '<img src="https://img.shields.io/github/stars/saas-js/saas-ui.svg?style=social&label=Star" />',
+        // href: "https://github.com/saas-js/saas-ui",
+        // action: false,
       },
     },
   };

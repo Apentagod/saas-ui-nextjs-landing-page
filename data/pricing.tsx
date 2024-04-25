@@ -1,113 +1,113 @@
 import { HStack, Text } from '@chakra-ui/react'
 
 export default {
-  title: 'Pricing for every stage',
+  title: 'Árak és Csomagok',
   description:
-    'Pay once and get life-time access to our high quality components.',
+    'Kérlek, add meg a lenti e-mail címre vagy a "Rendelés" gombra kattintás után, melyik csomagot választod, és oszd meg a hozzá tartozó preferenciákat. Amint elkészülnek a zenék, elküldjük neked a DEMO verziót a kívánt dalaidból. Ha elnyerik a tetszésedet a művek, az utalást követően megküldjük a teljes dalokat. A folyamat általában 2-3 napot vesz igénybe, mire a zenék a kezedben lehetnek!',
   plans: [
     {
       id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
+      title: 'Harmónia Start',
+      description: 'Kezdőcsomag azoknak, akik első lépéseiket teszik a zeneszerzés világában.',
+      price: '3000,- Ft / 3 Dal',
       features: [
         {
-          title: 'MIT License',
+          title: 'Személyre szabott dalok generálása - Lehetőség egyedi zenék és dallamok létrehozására személyes igények és preferenciák alapján',
         },
         {
-          title: 'Authentication (Clerk/Supabase/Magic)',
+          title: 'Több nyelven elérhető - A felhasználók különböző nyelveken hozhatnak létre és módosíthatnak dalokat, növelve ezzel a zenei alkotások sokszínűségét',
         },
         {
-          title: 'Form (react-hook-form)',
+          title: 'Generált és saját dalszövegek - Opció a saját szövegek beillesztésére vagy az automatikusan generált szövegek használatára a zenékhez',
         },
         {
-          title: 'Modals manager',
+          title: '3db Egyedi és személyre szabott dal',
         },
-        {
-          title: 'Hotkeys',
-        },
-        {
-          title: 'Web3 components',
-        },
-        {
-          title: 'And much more...',
-        },
+        // {
+        //   // title: 'Hotkeys',
+        // },
+        // {
+        //   title: 'Web3 components',
+        // },
+        // {
+        //   title: 'And much more...',
+        // },
       ],
       action: {
-        href: '#',
+        href: 'mailto:muzsikai.planner984@simplelogin.com',
       },
     },
     {
       id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
+      title: 'Ritmus Revolúció',
+      description: 'Haladó csomag több zene igényléséhez bátrabb kísérletezők számára.',
+      price: '10 000,- Ft / 12 Dal',
       isRecommended: true,
       features: [
         {
-          title: 'One project',
+          title: 'Személyre szabott dalok generálása - Lehetőség egyedi zenék és dallamok létrehozására személyes igények és preferenciák alapján',
         },
         {
-          title: 'One developer',
+          title: 'Több nyelven elérhető - A felhasználók különböző nyelveken hozhatnak létre és módosíthatnak dalokat, növelve ezzel a zenei alkotások sokszínűségét',
         },
         {
-          title: 'Advanced components',
+          title: 'Generált és saját dalszövegek - Opció a saját szövegek beillesztésére vagy az automatikusan generált szövegek használatára a zenékhez',
         },
         {
-          title: 'Multiple themes',
+          title: '12db Egyedi és személyre szabott dal',
         },
-        {
-          title: 'Next.js and Electron boilerplates',
-        },
-        {
-          title: 'Private discord community',
-        },
-        {
-          title: '1 year of updates',
-        },
-        null,
-        {
-          title: 'Private beta access',
-          iconColor: 'green.500',
-        },
+        // {
+        //   title: 'Next.js and Electron boilerplates',
+        // },
+        // {
+        //   title: 'Private discord community',
+        // },
+        // {
+        //   title: '1 year of updates',
+        // },
+        // null,
+        // {
+        //   title: 'Private beta access',
+        //   iconColor: 'green.500',
+        // },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Single%20license',
+        href: 'mailto:muzsikai.planner984@simplelogin.com',
       },
     },
     {
       id: 'startup',
-      title: 'Startup',
-      description: 'Unlimited license for growing teams.',
+      title: 'Melódia Mester',
+      description: 'Profi csomag komplex zenei kihívásokhoz, tökéletes, ha egy konkrét albumot szeretnél készíteni vagy csak minél több dalt szeretnél kapni.',
       price: (
         <HStack>
           <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
+          24 999,- Ft
           </Text>
-          <Text>€499,-</Text>
+          <Text>20 000,- Ft / 25 Dal</Text>
         </HStack>
       ),
       features: [
         {
-          title: 'Unlimited projects',
+          title: 'Személyre szabott dalok generálása - Lehetőség egyedi zenék és dallamok létrehozására személyes igények és preferenciák alapján',
         },
         {
-          title: 'Unlimited developers',
+          title: 'Több nyelven elérhető - A felhasználók különböző nyelveken hozhatnak létre és módosíthatnak dalokat, növelve ezzel a zenei alkotások sokszínűségét',
         },
         {
-          title: '1 year of updates',
+          title: 'Generált és saját dalszövegek - Opció a saját szövegek beillesztésére vagy az automatikusan generált szövegek használatára a zenékhez',
         },
         {
-          title: 'Everything from Bootstrap',
+          title: '1-2 nap-os feldolgozási idő',
         },
         null,
         {
-          title: 'Private beta access',
+          title: 'VIP sorban állás',
           iconColor: 'green.500',
         },
       ],
       action: {
-        href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order?variant=Unlimited%20license',
+        href: 'mailto:muzsikai.planner984@simplelogin.com',
       },
     },
   ],
