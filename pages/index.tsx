@@ -121,12 +121,12 @@ const HeroSection: React.FC = () => {
               </HStack> */}
 
               <ButtonGroup spacing={4} pt={8} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="mailto:muzsikai.planner984@simplelogin.com">
+                <ButtonLink colorScheme="primary" size="lg" href="mailto:info@muzsikai.com">
                   Rendelés
                 </ButtonLink>
                 {/* <ButtonLink
                   size="lg"
-                  href="mailto:muzsikai.planner984@simplelogin.com"
+                  href="mailto:info@muzsikai.com"
                   variant="outline"
                   rightIcon={
                     <Icon

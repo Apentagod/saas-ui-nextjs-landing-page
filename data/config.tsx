@@ -6,7 +6,7 @@ import { FiCheck } from 'react-icons/fi'
 import { Logo } from './logo'
 
 const siteConfig = {
-  logo: Logo,
+  // logo: Logo,
   seo: {
     // title: ' SaasUI',
     // description: 'The React component library for startups',
@@ -33,7 +33,7 @@ const siteConfig = {
       },
       {
         label: 'Rendelés',
-        href: 'mailto:muzsikai.planner984@simplelogin.com',
+        href: 'mailto:info@muzsikai.com',
         variant: 'primary',
       },
     ],
@@ -47,15 +47,15 @@ const siteConfig = {
     ),
     links: [
       {
-        href: 'mailto:muzsikai.planner984@simplelogin.com',
+        href: 'mailto:info@muzsikai.com',
         label: 'Elérhetőség',
       },
       {
-        href: 'mailto:muzsikai.planner984@simplelogin.com',
+        href: 'mailto:info@muzsikai.com',
         label: <FaMusic size="14" />,
       },
       {
-        // href: 'mailto:muzsikai.planner984@simplelogin.com',
+        // href: 'mailto:info@muzsikai.com',
         // label: <Famu size="14" />,
       },
     ],

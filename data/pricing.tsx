@@ -3,7 +3,7 @@ import { HStack, Text } from '@chakra-ui/react'
 export default {
   title: 'Árak és Csomagok',
   description:
-    'Kérlek, add meg a lenti e-mail címre vagy a "Rendelés" gombra kattintás után, melyik csomagot választod, és oszd meg a hozzá tartozó preferenciákat. Amint elkészülnek a zenék, elküldjük neked a DEMO verziót a kívánt dalaidból. Ha elnyerik a tetszésedet a művek, az utalást követően megküldjük a teljes dalokat. A folyamat általában 2-3 napot vesz igénybe, mire a zenék a kezedben lehetnek!',
+    'Kérlek, add meg az info@muzsikai.com e-mail címre vagy a "Rendelés" gombra kattintás után, melyik csomagot választod, és oszd meg a hozzá tartozó preferenciákat. Amint elkészülnek a zenék, elküldjük neked a DEMO verziót a kívánt dalaidból. Ha elnyerik a tetszésedet a művek, az utalást követően megküldjük a teljes dalokat. A folyamat általában 2-3 napot vesz igénybe, mire a zenék a kezedben lehetnek!',
   plans: [
     {
       id: 'oss',
@@ -34,7 +34,7 @@ export default {
         // },
       ],
       action: {
-        href: 'mailto:muzsikai.planner984@simplelogin.com',
+        href: 'mailto:info@muzsikai.com',
       },
     },
     {
@@ -72,7 +72,7 @@ export default {
         // },
       ],
       action: {
-        href: 'mailto:muzsikai.planner984@simplelogin.com',
+        href: 'mailto:info@muzsikai.com',
       },
     },
     {
@@ -107,7 +107,7 @@ export default {
         },
       ],
       action: {
-        href: 'mailto:muzsikai.planner984@simplelogin.com',
+        href: 'mailto:info@muzsikai.com',
       },
     },
   ],

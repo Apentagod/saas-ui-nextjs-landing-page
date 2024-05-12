@@ -16,7 +16,7 @@ A MuzsikAI egy zenei rendelési platform, ahol különféle zenei csomagokat ren
     },
     {
       q: 'Hogyan rendelhetek zenét a MuzsikAI-ról?',
-      a: "Válaszd ki a neked tetsző csomagot, majd oszd meg velünk preferenciáidat és igényeidet az adott e-mail címen, vagy egyszerűen használd a rendelés gombot a honlapon, ahol közvetlenül rögzítheted kéréseidet. Ezt követően azonnal hozzálátunk a zenék elkészítéséhez. Minden dal hossza 2-3 perc. Miután befejeztük, egy demó verziót küldünk neked e-mailben, és amennyiben elnyeri a tetszésedet, megküldjük a teljes dalokat. A kérések között mindenképpen szerepeljenek a következők: Csomag neve, mindegyik dal szövege (ígényelhetsz ingyen is szimplán leírva, hogy miről szóljon a zene, kik szerepeljenek benne, milyen zenei stílusban, ha nincs ötleted), zenei stílus, egyéb kérések, ha lehetséges",
+      a: "Válaszd ki a neked tetsző csomagot, majd oszd meg velünk preferenciáidat és igényeidet az info@muzsikai.com e-mail címen, vagy egyszerűen használd a rendelés gombot a honlapon, ahol közvetlenül rögzítheted kéréseidet. Ezt követően azonnal hozzálátunk a zenék elkészítéséhez. Minden dal hossza 2-3 perc. Miután befejeztük, egy demó verziót küldünk neked e-mailben, és amennyiben elnyeri a tetszésedet, megküldjük a teljes dalokat. A kérések között mindenképpen szerepeljenek a következők: Csomag neve, mindegyik dal szövege (ígényelhetsz ingyen is szimplán leírva, hogy miről szóljon a zene, kik szerepeljenek benne, milyen zenei stílusban, ha nincs ötleted), zenei stílus, egyéb kérések, ha lehetséges",
     },
     {
       q: 'Hogyan történik a fizetés?',
