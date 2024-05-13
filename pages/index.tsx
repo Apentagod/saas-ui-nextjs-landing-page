@@ -67,13 +67,12 @@ import {
   HighlightsTestimonialItem,
 } from "components/highlights";
 import { FaIceCream } from "react-icons/fa";
-
 const Home: NextPage = () => {
   return (
     <Box>
       <SEO
         title="MuzsikAI"
-        description="Free SaaS landingspage starter kit"
+        description="Mesterséges Intelligencia által személyre szabott zenék"
       />
       <Box>
         <HeroSection />
@@ -90,7 +89,7 @@ const Home: NextPage = () => {
       </Box>
     </Box>
   );
-};
+}
 
 const HeroSection: React.FC = () => {
   return (
