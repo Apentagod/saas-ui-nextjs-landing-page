@@ -28,6 +28,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".contentlayer/generated"
-  ],
+, "components/ContactForm.js"  ],
   "exclude": ["node_modules"]
 }

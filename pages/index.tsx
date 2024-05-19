@@ -67,6 +67,8 @@ import {
   HighlightsTestimonialItem,
 } from "components/highlights";
 import { FaIceCream } from "react-icons/fa";
+import ContactForm from "../components/ContactForm"; // Import ContactForm
+
 const Home: NextPage = () => {
   return (
     <Box>
@@ -76,16 +78,12 @@ const Home: NextPage = () => {
       />
       <Box>
         <HeroSection />
-
         <HighlightsSection />
-
         <FeaturesSection />
-
         <TestimonialsSection />
-
         <PricingSection />
-
         <FaqSection />
+        <ContactSection /> {/* Include the ContactSection here */}
       </Box>
     </Box>
   );
@@ -109,39 +107,16 @@ const HeroSection: React.FC = () => {
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-               Forradalmi zenei platform, ahol igényelhetsz <Em>MESTERSÉGES INTELLIGENCIA</Em>
+                Forradalmi zenei platform, ahol igényelhetsz <Em>MESTERSÉGES INTELLIGENCIA</Em>
                 <Br /> által személyre szabott zenéket. 
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
-              {/* <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
-              </HStack> */}
-
               <ButtonGroup spacing={4} pt={8} alignItems="center">
                 <ButtonLink colorScheme="primary" size="lg" href="mailto:info@muzsikai.com">
                   Rendelés
                 </ButtonLink>
-                {/* <ButtonLink
-                  size="lg"
-                  href="mailto:info@muzsikai.com"
-                  variant="outline"
-                  rightIcon={
-                    <Icon
-                      // as={FiArrowRight}
-                      sx={{
-                        transitionProperty: "common",
-                        transitionDuration: "normal",
-                        ".chakra-button:hover &": {
-                          transform: "translate(5px)",
-                        },
-                      }}
-                    />
-                  }
-                >
-                   View demo 
-                </ButtonLink> */}
               </ButtonGroup>
             </FallInPlace>
           </Hero>
@@ -188,24 +163,21 @@ const HeroSection: React.FC = () => {
           {
             title: "Tematikus",
             icon: FiSliders,
-            description:
-              "Teljes mértékben személyre szabható dalszöveg, stílus, nyelv és téma.",
+            description: "Teljes mértékben személyre szabható dalszöveg, stílus, nyelv és téma.",
             iconPosition: "left",
             delay: 0.8,
           },
           {
             title: "Összeállítható",
             icon: FiGrid,
-            description:
-              "Az egyes elemeket tetszés szerint lehet kombinálni és új összeállításokat készíteni.",
+            description: "Az egyes elemeket tetszés szerint lehet kombinálni és új összeállításokat készíteni.",
             iconPosition: "left",
             delay: 1,
           },
           {
             title: "Produktív",
             icon: FiThumbsUp,
-            description:
-              "Gyorsan és hatékonyan lehet vele dolgozni, minimalizálva a felesleges munkát.",
+            description: "Gyorsan és hatékonyan lehet vele dolgozni, minimalizálva a felesleges munkát.",
             iconPosition: "left",
             delay: 1.1,
           },
@@ -224,44 +196,14 @@ const HighlightsSection = () => {
       <HighlightsItem colSpan={[1, null, 2]} title="Hogy miért tőlünk rendelj?">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-          Fedezd fel a MuzsikAI-t, ahol csak a <Em>zenei igényeidet kell elküldened</Em>, és mi elkészítjük a tökéletes dallamot számodra!
-          Legyen szó <Em>bármilyen szövegről, stílusról, nyelvről vagy hangulatról</Em>, a MuzsikAI egyszerűen és gyorsan hozza el neked a kívánt zenét. Rendelj még ma, és tapasztald meg a zenei alkotás új dimenzióját!
+            Fedezd fel a MuzsikAI-t, ahol csak a <Em>zenei igényeidet kell elküldened</Em>, és mi elkészítjük a tökéletes dallamot számodra!
+            Legyen szó <Em>bármilyen szövegről, stílusról, nyelvről vagy hangulatról</Em>, a MuzsikAI egyszerűen és gyorsan hozza el neked a kívánt zenét. Rendelj még ma, és tapasztald meg a zenei alkotás új dimenzióját!
           </Text>
-
-          <Flex
-            // rounded="full"
-            // borderWidth="1px"
-            // flexDirection="row"
-            // alignItems="center"
-            // py="1"
-            // ps="8"
-            // pe="2"
-            // bg="primary.900"
-            // _dark={{ bg: "gray.900" }}
-          >
-            {/* <Box>
-              <Text color="yellow.400" display="inline">
-                yarn add
-              </Text>{" "}
-              <Text color="cyan.300" display="inline">
-                @saas-ui/react
-              </Text>
-            </Box>
-            <IconButton
-              icon={hasCopied ? <FiCheck /> : <FiCopy />}
-              aria-label="Copy install command"
-              onClick={onCopy}
-              variant="ghost"
-              ms="4"
-              isRound
-              color="white" */}
-            {/* /> */}
-          </Flex>
         </VStack>
       </HighlightsItem>
       <HighlightsItem title="Minden Korosztálynak">
         <Text color="muted" fontSize="lg">
-        Nem arra törekszünk, hogy már a létező megoldásokat újraalkossuk, és ezt neked sem kell. A zenei szakma legkiválóbb és legelismertebb eszközei közül választottuk ki a legjobbakat, amelyekre alapozva hoztuk létre a MuzsikAI-t, így <Em>mindenki számára elérhető</Em>.
+          Nem arra törekszünk, hogy már a létező megoldásokat újraalkossuk, és ezt neked sem kell. A zenei szakma legkiválóbb és legelismertebb eszközei közül választottuk ki a legjobbakat, amelyekre alapozva hoztuk létre a MuzsikAI-t, így <Em>mindenki számára elérhető</Em>.
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
@@ -277,7 +219,7 @@ const HighlightsSection = () => {
         title="Indítsd el a következő zenei projektedet!"
       >
         <Text color="muted" fontSize="lg">
-        A MuzsikAI gondoskodik minden alapvető zenei igényedről, így neked csak ezeket kell elküldened nekünk.
+          A MuzsikAI gondoskodik minden alapvető zenei igényedről, így neked csak ezeket kell elküldened nekünk.
         </Text>
         <Wrap mt="8">
           {[
@@ -334,7 +276,6 @@ const FeaturesSection = () => {
         <>
           A MuzsikAI minden szükséges eszközt biztosít, hogy modern, személyre szabott zenéket hozz létre. Ideális alap a következő zenei projektjeidhez vagy a saját dallamrendszered megalkotásához.
           <Br />
-          
         </>
       }
       align="left"
@@ -344,70 +285,38 @@ const FeaturesSection = () => {
         {
           title: "Funkciók.",
           icon: FiMusic,
-          description:
-            "Testre szabható zenei funkciók, amelyekkel saját ízlésed szerint alakíthatod a dalokat, bármilyen nyelven, stílusban, szöveggel.",
+          description: "Testre szabható zenei funkciók, amelyekkel saját ízlésed szerint alakíthatod a dalokat, bármilyen nyelven, stílusban, szöveggel.",
           variant: "inline",
         },
         {
           title: "Kezdőcsomagok.",
           icon: FiPackage,
-          description:
-            "Különböző zenei stílusokban készült dalok, amelyeket saját vagy generált dalszövegekkel látunk el. Ideális ajándék párodnak, barátodnak vagy ismerőseidnek különleges alkalmakra, mint például születésnap.",
+          description: "Különböző zenei stílusokban készült dalok, amelyeket saját vagy generált dalszövegekkel látunk el. Ideális ajándék párodnak, barátodnak vagy ismerőseidnek különleges alkalmakra, mint például születésnap.",
           variant: "inline",
         },
         {
           title: "Dokumentáció.",
           icon: FiSearch,
-          description:
-            "Minden szükséges információ részletesen dokumentálva, beleértve a generált dalok zenei stílusát, szövegét, témáját.",
+          description: "Minden szükséges információ részletesen dokumentálva, beleértve a generált dalok zenei stílusát, szövegét, témáját.",
           variant: "inline",
         },
         {
           title: "Felhasználói bevezetés.",
           icon: FiUser,
-          description:
-            "Bevezető példák, amelyek segítenek a MuzsikAI rendszerének könnyű és gyors elsajátításában.",
+          description: "Bevezető példák, amelyek segítenek a MuzsikAI rendszerének könnyű és gyors elsajátításában.",
           variant: "inline",
         },
         {
           title: "Up-to-date.",
           icon: FiTrendingUp,
-          description:
-            "Minden prémium zenei elem hozzáférhető a rendszerünkön, garantálva, hogy a zene mindig friss és személyre szabott maradjon.",
+          description: "Minden prémium zenei elem hozzáférhető a rendszerünkön, garantálva, hogy a zene mindig friss és személyre szabott maradjon.",
           variant: "inline",
         },
         {
           title: "Kreativitás.",
           icon: FaIceCream,
-          description:
-            "A MuzsikAI tökéletes eszköz arra, hogy inspirálódj és kibontakoztasd kreatív énedet.",
+          description: "A MuzsikAI tökéletes eszköz arra, hogy inspirálódj és kibontakoztasd kreatív énedet.",
           variant: "inline",
-        },
-        {
-          // title: "Themes.",
-          // icon: FiToggleLeft,
-          // description:
-          //   "Includes multiple themes with darkmode support, always have the perfect starting point for your next project.",
-          // variant: "inline",
-        },
-        {
-          // title: "Generators.",
-          // icon: FiTerminal,
-          // description:
-          //   "Extend your design system while maintaininig code quality and consistency with built-in generators.",
-          // variant: "inline",
-        },
-        {
-          // title: "Monorepo.",
-          // icon: FiCode,
-          // description: (
-          //   <>
-          //     All code is available as packages in a high-performance{" "}
-          //     <Link href="https://turborepo.com">Turborepo</Link>, you have full
-          //     control to modify and adjust it to your workflow.
-          //   </>
-          // ),
-          // variant: "inline",
         },
       ]}
     />
@@ -457,6 +366,17 @@ const PricingSection = () => {
 
 const FaqSection = () => {
   return <Faq {...faq} />;
+};
+
+const ContactSection = () => {
+  return (
+    <Container maxW="container.md" py="20">
+      <Heading as="h2" size="xl" mb="8" textAlign="center">
+        Rendelés Leadása
+      </Heading>
+      <ContactForm />
+    </Container>
+  );
 };
 
 export default Home;
