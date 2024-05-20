@@ -18,8 +18,8 @@ import {
   VStack,
   Flex,
 } from "@chakra-ui/react";
+import Head from 'next/head';
 import { SEO } from "components/seo/seo";
-
 import { FallInPlace } from "components/motion/fall-in-place";
 import { Hero } from "components/hero";
 import { Link, Br } from "@saas-ui/react";
@@ -53,14 +53,11 @@ import { Features } from "components/features";
 import { BackgroundGradient } from "components/gradients/background-gradient";
 import { Faq } from "components/faq";
 import { Pricing } from "components/pricing/pricing";
-
 import { ButtonLink } from "components/button-link/button-link";
 import { Testimonial, Testimonials } from "components/testimonials";
-
 import faq from "data/faq";
 import testimonials from "data/testimonials";
 import pricing from "data/pricing";
-
 import {
   Highlights,
   HighlightsItem,
@@ -71,23 +68,32 @@ import ContactForm from "../components/ContactForm"; // Import ContactForm
 
 const Home: NextPage = () => {
   return (
-    <Box>
-      <SEO
-        title="MuzsikAI"
-        description="Mesterséges Intelligencia által személyre szabott zenék"
-      />
+    <>
+      <Head>
+        <title>MuzsikAI - Főoldal</title>
+        <meta name="description" content="Zenék készítése Mesterséges Intelligencia által a MuzsikAI platformján." />
+        <meta name="keywords" content="AI zene, mesterséges intelligencia, egyedi zene, zenei platform" />
+        <link rel="canonical" href="https://www.muzsikai.com" />
+        <link rel="alternate" href="https://www.muzsikai.com" hrefLang="hu" />
+      </Head>
       <Box>
-        <HeroSection />
-        <HighlightsSection />
-        <FeaturesSection />
-        <TestimonialsSection />
-        <PricingSection />
-        <FaqSection />
-        <ContactSection /> {/* Include the ContactSection here */}
+        <SEO
+          title="MuzsikAI"
+          description="Mesterséges Intelligencia által személyre szabott zenék"
+        />
+        <Box>
+          <HeroSection />
+          <HighlightsSection />
+          <FeaturesSection />
+          <TestimonialsSection />
+          <PricingSection />
+          <FaqSection />
+          <ContactSection /> {/* Include the ContactSection here */}
+        </Box>
       </Box>
-    </Box>
+    </>
   );
-}
+};
 
 const HeroSection: React.FC = () => {
   return (
@@ -212,14 +218,11 @@ const HighlightsSection = () => {
         avatar="/static/images/avatar.jpg"
         gradient={["pink.200", "purple.500"]}
       >
-        “A MuzsikAI olyan dalokat készített nekem, amiket már régóta szerettem volna megvalósítani. Sajnos nincs jó hangom és a zenei tudásom sem a legjobb, de a MuzsikAI-al végre ki tudom fejezni az érzelmeimet!”
+        “A MuzsikAI olyan dalokat készített nekem, amiket már régóta szerettem volna megvalósítani. Csak pár kattintás volt, és a végeredmény lenyűgöző lett. Mindenkinek csak ajánlani tudom!”
       </HighlightsTestimonialItem>
-      <HighlightsItem
-        colSpan={[1, null, 2]}
-        title="Indítsd el a következő zenei projektedet!"
-      >
+      <HighlightsItem title="Zene Készítés Könnyedén">
         <Text color="muted" fontSize="lg">
-          A MuzsikAI gondoskodik minden alapvető zenei igényedről, így neked csak ezeket kell elküldened nekünk.
+          A MuzsikAI platformján egyszerűen rendelhetsz személyre szabott zenéket. Csak mondd el, hogy milyen dallamra vagy hangulatra van szükséged, és mi megalkotjuk neked.
         </Text>
         <Wrap mt="8">
           {[
