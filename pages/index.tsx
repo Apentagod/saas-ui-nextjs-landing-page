@@ -66,6 +66,19 @@ import {
 import { FaIceCream } from "react-icons/fa";
 import ContactForm from "../components/ContactForm"; // Import ContactForm
 
+import CookieConsentBanner from "../components/CookieConsent";
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Component {...pageProps} />
+      <CookieConsentBanner />
+    </>
+  );
+}
+
+export { MyApp };
+
 const Home: NextPage = () => {
   return (
     <>
@@ -120,7 +133,7 @@ const HeroSection: React.FC = () => {
           >
             <FallInPlace delay={0.8}>
               <ButtonGroup spacing={4} pt={8} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="mailto:info@muzsikai.com">
+                <ButtonLink colorScheme="primary" size="lg" href="#rendeles-leadasa">
                   Rendelés
                 </ButtonLink>
               </ButtonGroup>
@@ -373,7 +386,7 @@ const FaqSection = () => {
 
 const ContactSection = () => {
   return (
-    <Container maxW="container.md" py="20">
+    <Container maxW="container.md" py="20" id="rendeles-leadasa">
       <Heading as="h2" size="xl" mb="8" textAlign="center">
         Rendelés Leadása
       </Heading>

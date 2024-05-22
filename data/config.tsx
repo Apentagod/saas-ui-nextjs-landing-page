@@ -95,12 +95,12 @@ const siteConfig = {
         label: 'FAQ',
       },
       {
-        // label: 'Belépés',
-        // href: '/login',
+        id: 'contact',
+        label: 'Kapcsolat',
       },
       {
         label: 'Rendelés',
-        href: 'mailto:info@muzsikai.com',
+        href: '#rendeles-leadasa',
         variant: 'primary',
       },
     ],
@@ -114,15 +114,15 @@ const siteConfig = {
     ),
     links: [
       {
-        href: 'mailto:info@muzsikai.com',
+        href: '#rendeles-leadasa',
         label: 'Elérhetőség',
       },
       {
-        href: 'mailto:info@muzsikai.com',
+        href: '#rendeles-leadasa',
         label: <FaMusic size="14" />,
       },
       {
-        // href: 'mailto:info@muzsikai.com',
+        // href: '#rendeles-leadasa',
         // label: <Famu size="14" />,
       },
     ],
@@ -157,4 +157,4 @@ const siteConfig = {
   },
 }
 
-export default siteConfig
+export default siteConfig;
